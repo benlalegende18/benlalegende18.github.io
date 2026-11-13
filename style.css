@@ -75,7 +75,7 @@ body{
 .brand{
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:18px;
   color:inherit;
   text-decoration:none;
   min-width:0;
@@ -87,6 +87,18 @@ body{
   height:100px;
   object-fit:contain;
   object-position:left center;
+}
+
+.brand-name{
+  color:var(--cyan);
+  font-size:27px;
+  font-weight:900;
+  letter-spacing:4px;
+  text-shadow:
+    0 0 8px #16d9f5,
+    0 0 18px #16d9f5,
+    0 0 30px #16d9f566;
+  white-space:nowrap;
 }
 
 .nav{
@@ -424,7 +436,7 @@ body{
 
 .closing .primary-link{margin-top:6px}
 
-/* PIED DE PAGE ET CONFIDENTIALITÉ */
+/* PIED DE PAGE */
 
 footer{
   max-width:1184px;
@@ -470,7 +482,19 @@ footer span:last-child{margin-left:auto}
 
 @media(max-width:800px){
   .site-header{height:90px}
-  .brand-logo{width:210px;height:82px}
+
+  .brand-logo{
+    width:180px;
+    height:82px;
+  }
+
+  .brand-name{
+    font-size:20px;
+    letter-spacing:2px;
+  }
+
+  .brand{gap:12px}
+
   .menu-toggle{
     display:block;
     cursor:pointer;
@@ -541,9 +565,16 @@ footer span:last-child{margin-left:auto}
   }
 
   .brand-logo{
-    width:180px;
-    height:76px;
+    width:125px;
+    height:70px;
   }
+
+  .brand-name{
+    font-size:16px;
+    letter-spacing:1px;
+  }
+
+  .brand{gap:9px}
 
   .hero h1{font-size:43px}
   .lead{font-size:15px}
@@ -567,5 +598,8 @@ footer span:last-child{margin-left:auto}
     gap:14px;
   }
 
-  footer span:last-child{margin-left:0;width:100%}
+  footer span:last-child{
+    margin-left:0;
+    width:100%;
+  }
 }
