@@ -3,26 +3,153 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NEON BAR</title>
-  <meta name="description" content="NEON BAR — votre espace gaming.">
-  <style>
-    :root { color-scheme: dark; }
-    body {
-      margin: 0; min-height: 100vh; display: grid; place-items: center;
-      background: radial-gradient(circle at top, #14213d, #070910 60%);
-      color: #f4f7ff; font-family: Arial, sans-serif; text-align: center;
-    }
-    main { padding: 40px 24px; }
-    h1 { color: #39d9ff; font-size: clamp(3rem, 10vw, 6rem); margin: 0 0 12px; letter-spacing: .08em; }
-    p { color: #c4cee0; font-size: 1.1rem; }
-    a { color: #39d9ff; }
-  </style>
+  <meta name="theme-color" content="#080b18">
+  <meta name="description" content="NEON BAR : performances PC, captures, audio, personnalisation RGB, bibliothèque et statistiques gaming dans une seule application.">
+  <title>NEON BAR — Ton espace gaming</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="NEON BAR, accueil">
+      <span class="brand-mark">N<span>✦</span>B</span>
+      <span class="brand-copy"><strong>NEON BAR</strong><small>TON ESPACE GAMING</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="#fonctionnalites">Fonctionnalités</a>
+      <a href="#bibliotheque">Bibliothèque</a>
+      <a href="#statistiques">Statistiques</a>
+    </nav>
+  </header>
+
   <main>
-    <h1>NEON BAR</h1>
-    <p>Votre espace gaming, au même endroit.</p>
-    <p><a href="/privacy.html">Politique de confidentialité</a></p>
+    <section class="hero" id="accueil">
+      <div class="hero-copy">
+        <p class="eyebrow">UN SEUL LOGICIEL. TOUT TON UNIVERS GAMING.</p>
+        <h1>Bienvenue dans<br><span>ton espace gaming.</span></h1>
+        <p class="lead">NEON BAR rassemble les outils essentiels de ton PC et de tes jeux dans une interface unique, pensée pour les joueurs.</p>
+        <a class="primary-link" href="#fonctionnalites">Découvrir les fonctionnalités <span>↓</span></a>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/home.png" alt="Écran d’accueil de NEON BAR et ses sept modules">
+        <div class="visual-caption">Une interface personnalisée pour ton setup</div>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <div><strong>7 modules</strong><span>réunis dans une seule application</span></div>
+      <div><strong>PC & jeux</strong><span>tes outils au même endroit</span></div>
+      <div><strong>À ta façon</strong><span>une interface personnalisable</span></div>
+    </section>
+
+    <section class="section" id="fonctionnalites">
+      <div class="section-heading">
+        <p class="eyebrow">EXPLORE NEON BAR</p>
+        <h2>Tous tes outils, <span>à portée de main.</span></h2>
+        <p>Surveille ton ordinateur, capture tes moments de jeu et personnalise ton environnement.</p>
+      </div>
+
+      <article class="feature-row">
+        <div class="feature-image"><img src="assets/performance.png" alt="Module Performance affichant CPU, RAM, GPU, température et réseau"></div>
+        <div class="feature-copy"><span class="number">01 / PERFORMANCE</span><h3>Garde un œil sur ton PC.</h3>
+          <p>Surveille l’utilisation du processeur (CPU), de la mémoire vive (RAM), de la carte graphique (GPU), la température du CPU et l’activité réseau.</p>
+          <p>Des graphiques en temps réel te permettent de suivre l’évolution des ressources de ton ordinateur.</p>
+        </div>
+      </article>
+
+      <article class="feature-row reverse">
+        <div class="feature-image"><img src="assets/capture.png" alt="Module Capture avec sélection de fenêtre, capture photo et enregistrement vidéo"></div>
+        <div class="feature-copy"><span class="number">02 / CAPTURE</span><h3>Garde tes meilleurs moments.</h3>
+          <p>Prends une capture d’écran ou lance un enregistrement vidéo, en plein écran ou depuis une fenêtre sélectionnée.</p>
+          <p>Choisis les paramètres vidéo disponibles, puis retrouve tes photos et tes vidéos dans la galerie intégrée.</p>
+        </div>
+      </article>
+
+      <article class="feature-row">
+        <div class="feature-image"><img src="assets/audio.png" alt="Module Audio avec volume, périphériques d’entrée et de sortie et visualiseur sonore"></div>
+        <div class="feature-copy"><span class="number">03 / AUDIO</span><h3>Maîtrise ton environnement sonore.</h3>
+          <p>Gère le volume de sortie et sélectionne tes périphériques audio d’entrée et de sortie.</p>
+          <p>Le visualiseur affiche les niveaux sonores du microphone et de la sortie audio en temps réel.</p>
+        </div>
+      </article>
+
+      <article class="feature-row reverse">
+        <div class="feature-image"><img src="assets/rgb-control.png" alt="Module RGB Control avec curseurs rouge, vert et bleu et profils prédéfinis"></div>
+        <div class="feature-copy"><span class="number">04 / RGB CONTROL</span><h3>Crée les couleurs qui te ressemblent.</h3>
+          <p>Compose une couleur personnalisée à l’aide des curseurs rouge, vert et bleu (RVB).</p>
+          <p>Choisis un profil prédéfini ou enregistre tes couleurs favorites pour personnaliser l’ambiance de NEON BAR.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="library-section" id="bibliotheque">
+      <div class="section-heading">
+        <p class="eyebrow">TA COLLECTION DE JEUX</p>
+        <h2>Ta bibliothèque, <span>unifiée.</span></h2>
+        <p>Retrouve tes jeux installés et lance-les depuis un seul endroit.</p>
+      </div>
+      <div class="library-layout">
+        <div class="library-copy">
+          <span class="number">05 / BIBLIOTHÈQUE</span>
+          <h3>Tous tes jeux au même endroit.</h3>
+          <p>NEON BAR peut détecter des jeux provenant de plateformes comme Steam, Xbox et Epic Games, ainsi que des jeux ajoutés manuellement.</p>
+          <p>Si un jeu n’est pas détecté automatiquement, tu peux l’ajouter à ta bibliothèque. Sélectionne ensuite <strong>Jouer</strong> pour le lancer.</p>
+          <p class="note">La bibliothèque regroupe les raccourcis de lancement : retirer un jeu de NEON BAR ne le désinstalle pas de ton PC.</p>
+        </div>
+        <div class="library-image"><img src="assets/bibliotheque.png" alt="Bibliothèque NEON GAME LIBRARY avec jaquettes, recherche et boutons Jouer"></div>
+      </div>
+    </section>
+
+    <section class="section stats-section" id="statistiques">
+      <div class="section-heading">
+        <p class="eyebrow">SUIVI DE TA PROGRESSION</p>
+        <h2>Les statistiques <span>de tes jeux.</span></h2>
+        <p>Consulte les informations de tes comptes et suis tes succès sur les plateformes prises en charge.</p>
+      </div>
+
+      <div class="platform-block">
+        <div class="platform-title"><span class="platform-icon steam">S</span><div><h3>Steam</h3><p>Vue d’ensemble et suivi des succès</p></div></div>
+        <div class="stats-images">
+          <figure><img src="assets/steam-global.png" alt="Statistiques Steam : connexion, nombre de jeux, temps de jeu et résumé des succès"><figcaption>Vue d’ensemble Steam</figcaption></figure>
+          <figure><img src="assets/steam-succes.png" alt="Détail des succès Steam débloqués et non débloqués pour un jeu"><figcaption>Détail des succès Steam</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="platform-block">
+        <div class="platform-title"><span class="platform-icon xbox">X</span><div><h3>Xbox</h3><p>Profil, résumé gaming et succès</p></div></div>
+        <div class="stats-images">
+          <figure><img src="assets/xbox-global.png" alt="Statistiques Xbox : profil, gamerscore et résumé gaming"><figcaption>Vue d’ensemble Xbox</figcaption></figure>
+          <figure><img src="assets/xbox-succes.png" alt="Détail des succès Xbox d’un jeu"><figcaption>Détail des succès Xbox</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="platform-block epic-block">
+        <div class="platform-title"><span class="platform-icon epic">E</span><div><h3>Epic Games</h3><p>Fonctionnalité annoncée pour une prochaine évolution</p></div></div>
+        <p class="coming-soon">À venir prochainement</p>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p class="eyebrow">NEON BAR</p>
+      <h2>Ton univers gaming.<br><span>À ta manière.</span></h2>
+      <p>Un espace unique pour suivre ton PC, gérer tes jeux et personnaliser ton expérience.</p>
+      <a class="primary-link" href="#accueil">Retour en haut ↑</a>
+    </section>
   </main>
+
+  <footer><a class="footer-brand" href="#accueil">NEON BAR</a><span>Ton espace gaming</span><span>© 2026 NEON BAR</span></footer>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }));
+  </script>
 </body>
 </html>

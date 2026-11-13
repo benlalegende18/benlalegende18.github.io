@@ -1,0 +1,17 @@
+NEON BAR — site de présentation
+
+CONTENU
+- index.html : page complète du site
+- style.css : mise en page responsive
+- assets/ : captures fournies, associées à leur bonne rubrique
+
+MISE EN LIGNE SUR GITHUB PAGES
+1. Décompressez neon_bar_site.zip sur votre ordinateur.
+2. Ouvrez le dépôt GitHub qui publie actuellement le site.
+3. Dans le dépôt, ouvrez le dossier racine (là où se trouve index.html).
+4. Remplacez l'ancien index.html et ajoutez style.css ainsi que le dossier assets avec tout son contenu.
+5. Validez avec Commit changes. GitHub Pages publiera la nouvelle version automatiquement.
+
+IMPORTANT
+Conservez exactement les noms des fichiers dans assets : les chemins des images sont utilisés dans index.html.
+Les captures Steam et Xbox sont séparées entre vue d'ensemble et détail des succès. La rubrique Epic Games est indiquée « À venir prochainement », conformément au document fourni.
